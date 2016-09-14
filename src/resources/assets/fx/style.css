@@ -1,0 +1,49 @@
+.exitButton
+{
+    -fx-background-image: url('/assets/textures/Close-icon.png');
+    -fx-background-repeat: no-repeat;
+    -fx-border-radius: 0 0 0 0;
+    -fx-background-radius: 0 0 0 0;
+    -fx-background-color: rgba(0, 0, 0, 0);
+    -fx-background-position: center center;
+}
+
+.minButton
+{
+    -fx-background-image: url('/assets/textures/Minimize-icon.png');
+    -fx-background-repeat: no-repeat;
+    -fx-border-radius: 0 0 0 0;
+    -fx-background-radius: 0 0 0 0;
+    -fx-background-color: rgba(0, 0, 0, 0);
+    -fx-background-position: center center;
+}
+
+.maxButton
+{
+    -fx-background-image: url('/assets/textures/Maximize-icon.png');
+    -fx-background-repeat: no-repeat;
+    -fx-border-radius: 0 0 0 0;
+    -fx-background-radius: 0 0 0 0;
+    -fx-background-color: rgba(0, 0, 0, 0);
+    -fx-background-position: center center;
+}
+
+.consoleButton
+{
+    -fx-background-image: url('/assets/textures/Console-icon.png');
+    -fx-background-repeat: no-repeat;
+    -fx-border-radius: 0 0 0 0;
+    -fx-background-radius: 0 0 0 0;
+    -fx-background-color: rgba(0, 0, 0, 0);
+    -fx-background-position: center center;
+}
+
+.settingButton
+{
+    -fx-background-image: url('/assets/textures/Settings-icon.png');
+    -fx-background-repeat: no-repeat;
+    -fx-border-radius: 0 0 0 0;
+    -fx-background-radius: 0 0 0 0;
+    -fx-background-color: rgba(0, 0, 0, 0);
+    -fx-background-position: center center;
+}

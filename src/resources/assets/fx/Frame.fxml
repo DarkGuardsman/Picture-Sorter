@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1200.0" style="-fx-background-color: #292929;" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.builtbroken.picsort.fx.Controller">
+   <children>
+       <VBox style="-fx-background-color: #292929;" AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="1.0">
+          <children>
+             <Pane fx:id="headerPane" maxHeight="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="1200.0" style="-fx-background-color: #232323;">
+                <children>
+                  <Pane fx:id="buttonBar" layoutX="1000.0" layoutY="-1.0" prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: #232323;">
+                     <children>
+                         <Button layoutX="115.0" layoutY="8.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#minimize" prefHeight="20.0" prefWidth="20.0" styleClass="minButton" />
+                         <Button fx:id="settingButton" layoutX="40.0" layoutY="8.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#settings" prefHeight="20.0" prefWidth="20.0" styleClass="settingButton" />
+                         <Button layoutX="165.0" layoutY="8.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#exit" prefHeight="20.0" prefWidth="20.0" styleClass="exitButton" />
+                         <Button fx:id="consoleButton" layoutX="15.0" layoutY="8.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#console" prefHeight="20.0" prefWidth="20.0" styleClass="consoleButton" />
+                         <Button layoutX="140.0" layoutY="8.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#expand" prefHeight="20.0" prefWidth="20.0" styleClass="maxButton" />
+                     </children>
+                  </Pane>
+                  <Label layoutX="37.0" layoutY="7.0" styleClass="frameTitle" text="Image Sorter">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                </children>
+            </Pane>
+             <AnchorPane fx:id="contentPane" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #292929;" VBox.vgrow="ALWAYS">
+
+             </AnchorPane>
+          </children>
+       </VBox>
+   </children>
+</AnchorPane>
