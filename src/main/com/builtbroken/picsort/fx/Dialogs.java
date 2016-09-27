@@ -24,18 +24,20 @@ public class Dialogs
 
     public static void showErrorDialog(String message, String title, Throwable error)
     {
+        Stage stage = newScene(null, "Error", "dialog/error.fxml");
 
+        stage.showAndWait();
     }
 
-    public static Stage newScene(Window window, String file)
+    public static Stage newScene(Window window, String title, String file)
     {
         try
         {
             Stage stage = new Stage();
             stage.initStyle(StageStyle.UNDECORATED);
-            Parent root = FXMLLoader.load(Dialogs.class.getClassLoader().getResource("com/skcraft/launcher/fx/" + file));
+            Parent root = FXMLLoader.load(Dialogs.class.getClassLoader().getResource("assets/fx/" + file));
             stage.setScene(new Scene(root));
-            stage.setTitle("Launcher Update Dialog");
+            stage.setTitle(title);
             stage.initModality(Modality.APPLICATION_MODAL);
             stage.initOwner(window == null ? FxAPP.primaryStage : window);
             addMouseMoveStage(stage, root.lookup("#header"));
